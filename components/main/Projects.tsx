@@ -1,0 +1,49 @@
+import React from "react";
+import ProjectCard from "../sub/ProjectCard";
+
+const Projects = () => {
+    return (
+        <div
+            className="flex flex-col items-center justify-center py-20"
+            id="projects"
+        >
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+                My Projects
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
+                <ProjectCard
+                    src="/portfolio.png"
+                    title="nceedeetech portfolio"
+                    description="NceedeeTech portfolio highlights innovative web projects, showcasing expertise in modern design, responsive layouts, and seamless user experiences."
+                />
+                <ProjectCard
+                    src="/nectto.png"
+                    title="Nectto Social Media"
+                    description="Nectto is a social media platform by Nceedee, designed for modern interactions, featuring intuitive design, responsive layouts, and engaging user experiences."
+                />
+                <ProjectCard
+                    src="/healthyharvest.png"
+                    title="Healthy Harvest"
+                    description="Healthy Harvest is an e-commerce site by NceedeeTech, offering a seamless shopping experience with intuitive design, responsive layouts, and user-friendly navigation."
+                />
+                <ProjectCard
+                    src="/gobet.png"
+                    title="Gobet prediction website"
+                    description="GoBet is a demo React app by NceedeeTech, allowing users to predict bets with an intuitive interface, responsive design, and smooth user experience."
+                />
+                <ProjectCard
+                    src="/bird.png"
+                    title="Bird demo website"
+                    description="Bird Website is a Tailwind CSS demo by NceedeeTech, showcasing skills in responsive design, modern layouts, and clean, efficient styling."
+                />
+                <ProjectCard
+                    src="/zigah.png"
+                    title="Zigah demo website"
+                    description="Zigah is a platform by NceedeeTech, demonstrating Next.js and React.js skills for global money transfers with a sleek, responsive design and user-friendly interface."
+                />
+            </div>
+        </div>
+    );
+};
+
+export default Projects;
