@@ -13,7 +13,7 @@ const MobileNavbar = () => {
     };
 
     return (
-        <div className="relative sm:block lg:hidden">
+        <div className="relative sm:block z-[10000] lg:hidden">
             {/* Navbar */}
             <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-6 flex items-center justify-between">
                 <Link href="#about-me" className="flex items-center">
